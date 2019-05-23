@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ac225f6-e8bc-4ad6-97b3-38599feb9df3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/select.html" afterPath="$PROJECT_DIR$/select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wa.html" afterPath="$PROJECT_DIR$/wa.html" />
     </list>
     <ignored path="testing.iws" />
@@ -25,20 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="wa.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wa.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.967742">
-              <caret line="7" column="108" selection-start-line="7" selection-start-column="108" selection-end-line="7" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.17721519">
+              <caret line="7" column="109" selection-start-line="7" selection-start-column="109" selection-end-line="7" selection-end-column="109" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="select.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/select.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25086308">
+            <state vertical-scroll-proportion="-7.032258">
               <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding />
             </state>
@@ -84,8 +84,8 @@
         <option value="$PROJECT_DIR$/summer.html" />
         <option value="$PROJECT_DIR$/summer-ar.html" />
         <option value="$PROJECT_DIR$/summer-en.html" />
-        <option value="$PROJECT_DIR$/wa.html" />
         <option value="$PROJECT_DIR$/select.html" />
+        <option value="$PROJECT_DIR$/wa.html" />
       </list>
     </option>
   </component>
@@ -648,18 +648,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wa.html">
+    <entry file="file://$PROJECT_DIR$/select.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742">
-          <caret line="7" column="108" selection-start-line="7" selection-start-column="108" selection-end-line="7" selection-end-column="108" />
+        <state vertical-scroll-proportion="-7.032258">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/select.html">
+    <entry file="file://$PROJECT_DIR$/wa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25086308">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.17721519">
+          <caret line="7" column="109" selection-start-line="7" selection-start-column="109" selection-end-line="7" selection-end-column="109" />
           <folding />
         </state>
       </provider>
