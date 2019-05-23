@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<select id="filter_country" name="">
+    <option value="" selected disabled>البلد</option>
+    <option value="100">Algeria</option>
+    <option value="101">Bahrain</option>
+    <option value="489">Chad</option>
+    <option value="491">Djibouti</option>
+    <option value="490">Egypt</option>
+    <option value="488">Iran</option>
+    <option value="106">Iraq</option>
+    <option value="107">Jordan</option>
+    <option value="109">Kuwait</option>
+    <option value="110">Lebanon</option>
+    <option value="111">Libya</option>
+    <option value="112">Mauritania</option>
+    <option value="113">Morocco</option>
+    <option value="114">Oman</option>
+    <option value="115">Palestine</option>
+    <option value="116">Qatar</option>
+    <option value="108">Saudi Arabia</option>
+    <option value="117">Somalia</option>
+    <option value="118">Sudan</option>
+    <option value="119">Syria</option>
+    <option value="123">Tunisia</option>
+    <option value="120">United Arab Emirates</option>
+    <option value="121">Yemen</option>
+</select>
+<script>
+    $('#filter_country').find('option').each(function(index,element){
+if(element.text=='Morocco')
+{
+    alert("welcome to morroco");
+}
+
+    });
+</script>
+</body>
+</html>

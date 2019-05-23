@@ -1,0 +1,105 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<STYLE>
+    #container{position:relative;position: relative;right: 0;top: 0;width:728px;height:411px;}
+    #flip{cursor:pointer;text-align: center;background-color:#000000;position:relative;overflow:hidden;margin:auto}
+    #panel {text-align: center;position:relative;overflow:hidden;margin:auto}
+    #imgbtn{cursor:pointer;width:728px;height:411px}
+    #img_play_overlay {position: absolute;left:0;right:0;margin:auto;top:92px;}
+    .vimeoextra {display:block; width:728px; height:411px; margin:0 auto}
+    .vimeoFrame {width:728px; height:411px; overflow:hidden; margin:0 auto;}
+    .vimeoFrame .vimeoextra  {margin-top:-10px;}
+    .FloatingImage { position: absolute; top: 150px; left: 20px; height: 50px; width: 25px; }
+    .sound{position:absolute;top:10px;left:20px;z-index:1000;}
+    .play_pause{position:absolute;top:30px;left:20px;z-index:1000;}
+
+
+    .linkwrap { position:relative; display:inline-block; }
+    .blocker { position:absolute; height:100%; width:100%; z-index:1;   }
+    .linkwrap iframe { z-index: 2; }
+
+
+</STYLE>
+
+<script src="https://api.dmcdn.net/all.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<div id="container">
+    <div id="panel">
+        <a href='http://www.beinsports.com' target='_blank' class='linkwrap'>
+            <div class='blocker'></div>
+            <div id='player'></div>
+        </a>
+
+
+        <div class="sound" title="Mute/Unmute sound"><img style='z-index:1000' id="vol" src="http://media-center.static.beinsports.net/pepsi-phase4-2017/Mute.png" height="" width="" onclick=toggle() /></div>
+        <div class="play_pause" title="Play/Pause"><img style="z-index:1000;cursor:pointer" id="play_pause" src="http://media-center.static.beinsports.net/pepsi-phase4-2017/Pause.png" height="" width="" onclick="play_pause()"></div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function()
+    {
+
+        var player;
+
+
+        setTimeout(function(){ masthead(); }, 2500);
+
+
+        function masthead()
+        {
+
+            //Declartion for Daily motion
+            player = DM.player(document.getElementById("player"), {
+                video: "k6lYGJJ3HtxtGgrOrhR",
+                width: "728",
+                height: "411",
+                params: {
+                    autoplay: true,
+                    mute: true,
+                    controls: false,
+                    api: 1,
+                    rel: 0,
+                    wmode: 'opaque'
+                }
+            });
+
+            player.addEventListener('video_end', function (event) {
+                //player.seek(0);
+                //player.pause();
+                player.play();
+            });
+            parent.document.getElementById('desktop_lb').style.height='411px';
+            parent.$("#desktop_lb div iframe").height(411);
+        }
+    });
+
+    function play_pause()
+    {
+        var advol;
+        if (new String(document.getElementById('play_pause').src).indexOf('Pause') > 0) {
+            document.getElementById('play_pause').src = 'http://media-center.static.beinsports.net/pepsi-phase4-2017/Play.png';
+            advol = true;
+            //
+            player.pause();
+
+        }
+        else {
+            document.getElementById('play_pause').src = 'http://media-center.static.beinsports.net/pepsi-phase4-2017/Pause.png';
+            advol = false;
+            player.play();
+        }
+
+    }
+
+    function toggle()
+    {
+        var advol;
+        if (new String(document.getElementById('vol').src).indexOf('Unmute') > 0) {
+            document.getElementById('vol').src = 'http://media-center.static.beinsports.net/pepsi-phase4-2017/Mute.png';
+        }
+        else {
+            document.getElementById('vol').src = 'http://media-center.static.beinsports.net/pepsi-phase4-2017/Unmute.png';
+        }
+        player.toggleMuted();
+    }
+</script>
